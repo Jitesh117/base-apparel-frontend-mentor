@@ -15,15 +15,16 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="script.js"></script>
 </head>
 <body>
 
   <main>
-    <img id="logo" src="./images/logo.svg" alt="">
+   <a href="#"> <img id="logo" src="./images/logo.svg" alt=""></a>
     <img  id="mobile" src="./images/hero-mobile.jpg" alt="">
 
     <div class="text">
-      <h1><span class="orange">WE'RE</span> COMING SOON</h1>
+      <h1><span class="orange">WE'RE</span><br> COMING <br> SOON</h1>
 
   <div class="orange">
     Hello fellow shoppers! We're currently building our new fashion store. 
@@ -31,18 +32,25 @@
   </div>
 
   <div class="email">
-    <form action="">
-      <input type="text" placeholder="Email Address">
-    </form>
+    <div class="input">
+     <form action="" name="form1">
+       <input type="text" name="text1" placeholder="Email Address" required ">
+     </form>
+    </div>
+    <img src="./images/icon-error.svg" id="none" alt="">
+    <button onclick="ValidateEmail(document.form1.text1)"><img src="./images/icon-arrow.svg" alt=""></button>
+  </div>
+  <div id="nonetext">
+    Please provide a valid email
   </div>
     </div>
   </main>
   
-  <footer>
+  <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
-  </footer>
+  </footer> -->
 </body>
 </html>
