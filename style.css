@@ -66,7 +66,7 @@ input[type=text]
     border-style: none;
     background-color: inherit;
     width: 100%;
-    padding-right: 300px
+    /* padding-right: 300px */
 }
 input[type=text]::placeholder{
     color: var(--orange);
@@ -105,9 +105,7 @@ input[type=text]:focus{
         width: 100%;
     }
     
-    .button{
-        padding-left: 200px;
-    }
+    
 }
 @media screen and (min-width:601px){
     h1{
@@ -133,6 +131,9 @@ input[type=text]:focus{
         flex-direction: column;
         padding: 50px 10%;
         /* width: 60%; */
+    }
+    input[type=text]{
+        padding-right: 300px;
     }
     
 }
