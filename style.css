@@ -14,11 +14,14 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: 100vw;
     font-family: 'Josefin Sans', sans-serif;
     background-image: linear-gradient(135deg,hsl(0, 0%, 100%),  hsl(0, 100%, 98%));
-    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
-
+.wrong{
+    /* padding-left: 70%; */
+}
 .orange{
     color: var(--orange);
 }
@@ -26,7 +29,7 @@ body{
     /* padding: 10px 0; */
     display: flex;
     margin-top: 20px;
-    justify-content: flex-end;
+   
     border: 1px solid var(--orange);
     border-radius: 25px;
     align-items: center;
@@ -34,14 +37,25 @@ body{
 button{
     background-image: linear-gradient(135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
     border-style: none;
-    padding: 5px 20px;
+    padding: 5px 30px;
     border-radius: 15px;
     cursor: pointer;
+    /* margin-left: auto; */
+}
+.button{
+    margin-left: auto;
+    display: flex;
+    /* width: 20%; */
+}
+.wrong{
+    padding: 5px 10px ;
+   
 }
 button:hover{
     /* opacity: 0.6; */
     box-shadow: 5px 5px 25px grey;
 }
+
 input[type=text]
 {
     color:var(--orange);
@@ -52,9 +66,13 @@ input[type=text]
     border-style: none;
     background-color: inherit;
     width: 100%;
+    padding-right: 300px
 }
 input[type=text]::placeholder{
     color: var(--orange);
+}
+input[type=text]:focus{
+    outline: none;
 }
 #none{
     display: none;
@@ -66,11 +84,16 @@ input[type=text]::placeholder{
     font-size: 12px;
     padding-top: 10px;
 }
+
 @media screen and (max-width: 600px) {
     
     #mobile{
         width: 100%;
         height: auto;
+    }
+    #desktop{
+        display: none;
+
     }
     #logo{
         padding: 10px;
@@ -81,4 +104,35 @@ input[type=text]::placeholder{
        
         width: 100%;
     }
+    
+    .button{
+        padding-left: 200px;
+    }
+}
+@media screen and (min-width:601px){
+    h1{
+        font-size: 64px;
+    }
+    .desktop{
+        width: 40%;
+        
+    }
+    #desktop{
+        display: initial;
+        /* width: 100%; */
+    }
+    #mobile{
+        display: none;
+    }
+    main{
+        display: flex;
+        width: 100%;
+    }
+    .left{
+        display: flex;
+        flex-direction: column;
+        padding: 50px 10%;
+        /* width: 60%; */
+    }
+    
 }

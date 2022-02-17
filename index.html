@@ -20,29 +20,38 @@
 <body>
 
   <main>
-   <a href="#"> <img id="logo" src="./images/logo.svg" alt=""></a>
-    <img  id="mobile" src="./images/hero-mobile.jpg" alt="">
-
-    <div class="text">
-      <h1><span class="orange">WE'RE</span><br> COMING <br> SOON</h1>
-
-  <div class="orange">
-    Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-  </div>
-
-  <div class="email">
-    <div class="input">
-     <form action="" name="form1">
-       <input type="text" name="text1" placeholder="Email Address" required ">
-     </form>
+   <div class="left">
+    <div class="logo">
+      <a href="#"> <img id="logo" src="./images/logo.svg" alt=""></a>
+      <img  id="mobile" src="./images/hero-mobile.jpg" alt="">
+      
+     </div>
+      <div class="text">
+        <h1><span class="orange">WE'RE</span><br> COMING <br> SOON</h1>
+  
+    <div class="orange">
+      Hello fellow shoppers! We're currently building our new fashion store. 
+    Add your email below to stay up-to-date with announcements and our launch deals.
     </div>
-    <img src="./images/icon-error.svg" id="none" alt="">
-    <button onclick="ValidateEmail(document.form1.text1)"><img src="./images/icon-arrow.svg" alt=""></button>
-  </div>
-  <div id="nonetext">
-    Please provide a valid email
-  </div>
+  
+    <div class="email">
+      <div class="input">
+       <form action="" name="form1">
+         <input type="text" name="text1" placeholder="Email Address" required ">
+       </form>
+      </div>
+      <div class="button">
+        <img class="wrong" src="./images/icon-error.svg" id="none" alt="">
+      <button onclick="ValidateEmail(document.form1.text1)"><img src="./images/icon-arrow.svg" alt=""></button>
+      </div>
+    </div>
+    <div id="nonetext">
+      Please provide a valid email
+    </div>
+      </div>
+   </div>
+    <div class="desktop">
+      <img id = 'desktop'src="./images/hero-desktop.jpg" alt="">
     </div>
   </main>
   
